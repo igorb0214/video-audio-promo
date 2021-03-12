@@ -14,10 +14,4 @@ class GetController extends Controller
 		$this->response->returnBodyResponse($mp3Link);
 	}
 
-	protected function test(): void {
-
-		$data = ApiModel::test();
-
-		$this->response->returnJsonResponse($data);
-	}
 }
