@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  promo-api:
+    image: docker.pkg.github.com/igorb0214/video-audio-promo/video-audio-promo:master
+#    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - "C:/development/projects/video-audio-promo:/var/www/html/"
+      - "C:/development/projects/video-audio-promo/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini"
+      - "C:/development/projects/video-audio-promo/promo.conf:/etc/apache2/sites-available/promo.conf"
+
